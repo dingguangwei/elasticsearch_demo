@@ -8,7 +8,7 @@ import com.demo.elasticsearch_demo.common.TasteEventRequestBuilder;
 import com.demo.elasticsearch_demo.common.TasteEventResponse;
 
 public class TasteEventAction extends Action<TasteEventRequest, TasteEventResponse, TasteEventRequestBuilder>{
-	public static final String NAME="tastevent";
+	public static final String NAME="demoevent";
 	public static final TasteEventAction INSTANSE = new TasteEventAction();
 
 	protected TasteEventAction() {

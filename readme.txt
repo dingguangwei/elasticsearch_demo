@@ -20,6 +20,7 @@
 	如"myplugin"等任意不与之前url重复的名称，因为再次使用"_dQuery"会造成重复注册的错误（但是如果卸载了之前的插件就没事）。不同的url对应不同的查询
 	4、需要修改插件名称，有下面几个地方需要修改：
 		1）com.demo.elasticsearch_demo.plugin.TastePlugin的name()方法，返回值需要修改，如"myplugin"
+		2）com.demo.elasticsearch_demo.TasteEventAction中的NAME需要修改，如"mypluginevent"
 		2）将本项目中的src/main下的resources/plugin-descriptor.properties文件复制过去到对应位置，然后修改其中的34行、40行、58行，demo修改为myplugin，58行需要保证和你项目中路径一致
 		3）上述两步不保证完全修改完了，需要你按照 “打包方法” ，安装到es中去启动，如果出现 “started”，然后在浏览器中输入url能得到正确的数据，说明插件完全正确
 
